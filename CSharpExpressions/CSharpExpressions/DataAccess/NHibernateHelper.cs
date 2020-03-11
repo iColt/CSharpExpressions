@@ -15,8 +15,8 @@ namespace CSharpExpressions.DataAccess
             var cfg = new Configuration().
                 DataBaseIntegration(db =>
                 {
-                    db.ConnectionString=@"";
-                    db.Dialect<MsSql2008Dialect>();
+                    db.ConnectionString= @"Server=SC0848;initial catalog=CSharpExpressions;Integrated Security=SSPI;";
+                    db.Dialect<MsSql2005Dialect>();
                 });
             var mapper = new ModelMapper();
             mapper.AddMappings(Assembly.GetExecutingAssembly().GetExportedTypes());

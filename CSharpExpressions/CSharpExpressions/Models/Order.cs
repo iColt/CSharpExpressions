@@ -22,17 +22,17 @@ namespace CSharpExpressions.Models
 
     public class Order
     {
-        public int OrderId { get; set; }
+        public virtual int OrderId { get; set; }
 
-        public string Code { get; set; }
+        public virtual string Code { get; set; }
 
-        public string Notes { get; set; }
+        public virtual string Notes { get; set; }
 
-        public int? CustomerId { get; set; }
+        public virtual int? CustomerId { get; set; }
 
-        public decimal NetAmount { get; set; }
+        public virtual decimal NetAmount { get; set; }
 
-        public bool Accepted { get; set; }
+        public virtual bool Accepted { get; set; }
 
         public Order()
         {
@@ -41,10 +41,10 @@ namespace CSharpExpressions.Models
 
         #region Factory
 
-        public Order GetOrder(int id)
-        {
-            return null;
-        }
+        //public Order GetOrder(int id)
+        //{
+        //    return null;
+        //}
 
         #endregion
     }
